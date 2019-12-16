@@ -1,0 +1,32 @@
+<div class="session-container">
+  <div class="card login-form">
+    <%= render  "layouts/backoffice_shared/alerts" %>
+    <div class="card-header">
+        <h4>Login</h4>
+      </div>
+      <div class="card-body">
+          <%= form_tag backoffice_session_path, autocomplete:"disabled" do %>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><%= fa_icon "user" %></span>
+              </div>
+              <%= email_field_tag :email, nil, class: "form-control", placeholder: "E-mail", autofocus: true %>        
+            </div>
+            
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><%= fa_icon "unlock" %></span>
+                </div>
+              <%= password_field_tag :password, nil, class: "form-control", placeholder: "Senha" %>  
+            </div>
+            
+            <div class="text-center">
+              <%= submit_tag "Entrar", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+      </div>
+      
+    </div>
+
+</div>
+

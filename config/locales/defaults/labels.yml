@@ -1,0 +1,15 @@
+---
+pt-BR:
+  labels:
+    active:
+      text: Ativo(a)
+    inactive:
+      text: Inativo(a)
+    "true":
+      text: Sim
+    "false":
+      text: Não
+    "yes":
+      text: Sim
+    "no":
+      text: Não

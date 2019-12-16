@@ -1,0 +1,37 @@
+@import "./backoffice/bootstrap/variables.scss";
+
+$active-color: #c3086e !default;
+$navbar-dark-hover-color: lighten($active-color, 30%) !default;
+$navbar-dark-active-color: lighten($active-color, 10%) !default;
+
+$modal-fade-transform: scale(.8);
+
+@import "bootstrap";
+@import "font-awesome";
+
+@import "sweetalert2";
+
+@import "lightgallery";
+
+@import './backoffice/sessions';
+@import './backoffice/users';
+@import './backoffice/projects';
+@import './icons';
+
+.navbar{
+  // background-color: #65b7a8 !important;
+}
+
+.alert{
+  width: 80%;
+  margin: 2% 10%;
+}
+
+.table-actions{
+  min-width: 6em;
+  text-align: right;
+
+  a{
+    text-decoration: none;
+  }
+}

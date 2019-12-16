@@ -1,0 +1,2 @@
+module Backoffice::FileUploadsHelper
+end

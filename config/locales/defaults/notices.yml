@@ -1,0 +1,10 @@
+---
+pt-BR:
+  notices:
+    created: "%{model} adicionado(a) com sucesso."
+    destroyed: "%{model} removido(a) com sucesso."
+    destroy_restricted: "%{referenced} ainda é referenciado(a) em um(a) %{referrer}."
+    not_found: "%{model} não encontrado(a)."
+    unauthorized: "Ação não permitida para esse(a) %{model}."
+    updated: "%{model} atualizado(a) com sucesso."
+    are_you_sure: "Você tem certeza?"

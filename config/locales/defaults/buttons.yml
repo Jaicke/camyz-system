@@ -1,0 +1,16 @@
+---
+pt-BR:
+  buttons:
+    back: Voltar
+    destroy:
+      alt: 'Excluir'
+      confirm: 'Você tem certeza?'
+    edit:
+      alt: 'Alterar'
+    filter: Filtrar
+    new: "Novo %{model}"
+    print: Imprimir
+    submit:
+      text: Salvar
+    scrolltop: Voltar ao topo
+    add: Adicionar

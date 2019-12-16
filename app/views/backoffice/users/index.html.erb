@@ -1,0 +1,39 @@
+<div class="container">
+  <%= render "header", add_path: new_backoffice_user_path %>
+      
+  <table class="table table-hover table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Ativo</th>
+        <th scope="col">Administrador</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each_with_index do |user, index| %>
+        <tr>
+          <th scope="row"><%= index + 1 %></th>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= boolean_label(user.active?) %></td>
+          <td><%= boolean_label(user.admin?) %></td>
+
+          <td class="table-actions">
+            <%= link_to edit_backoffice_user_path(user), class: 'icon-link' do %>
+              <%= fa_icon "edit" %>
+            <% end %>
+
+            <%= link_to backoffice_user_path(user), class: 'icon-link remove-icon-link', method: :delete, data: { confirm: 'Você tem certeza?'} do %>
+              <%= fa_icon "trash" %>
+            <% end if current_user.admin? && user != current_user %>
+          </td>
+        </tr>
+      <% end %>  
+    </tbody>
+  </table>
+
+</div>
+

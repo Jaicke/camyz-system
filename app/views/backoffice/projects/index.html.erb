@@ -1,0 +1,42 @@
+<div class="container">
+  <%= render "header", add_path: new_backoffice_project_path %>
+      
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Ordem</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Ativo</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @projects.each do |project| %>
+        <tr class="accordion" id="accordionExample">
+          <td><%= project.order %></td>
+          <td><%= project.name %></td>
+          <td><%= boolean_label(project.active?) %></td>
+
+          <td class="table-actions">
+            <%= link_to backoffice_project_path(project), remote: true, class: 'icon-link upload-icon-link', data: { toggle: 'tooltip' }, title: "Visualizar Template" do %>
+              <%= fa_icon "search" %>
+            <% end %>
+
+            <%= link_to edit_backoffice_project_path(project), class: 'icon-link', data: { toggle: 'tooltip' }, title: "Editar" do %>
+              <%= fa_icon "edit" %>
+            <% end %>
+
+            <%= link_to backoffice_project_path(project), class: 'icon-link remove-icon-link', method: :delete, data: { confirm: 'Você tem certeza?', toggle: 'tooltip'}, title: "Excluir" do %>
+              <%= fa_icon "trash" %>
+            <% end %>
+          </td>
+        </tr>       
+      <% end %>  
+    </tbody>
+  </table>
+</div>
+
+
+
+
+

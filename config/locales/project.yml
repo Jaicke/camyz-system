@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      project:
+        one: Projeto
+        other: Projetos
+    attributes:
+      project:
+        order: Ordem
+        name: Nome
+        cover: Capa
+        active: Ativo
+        description: Descrição
+        
