@@ -1,6 +1,6 @@
 production:
-  cloud_name: ENV["CLOUD_NAME"]
-  api_key: ENV["API_KEY"]
-  api_secret: ENV["API_SECRET"]
+  cloud_name: "eHsAYPix2KfCtBGHF7dkqs4XZ7k"
+  api_key: "865581562379572"
+  api_secret: "eHsAYPix2KfCtBGHF7dkqs4XZ7k"
   enhance_image_tag: true
   static_file_support: true
