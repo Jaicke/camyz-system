@@ -1,6 +1,6 @@
 $(document).on('turbolinks:load', function() {
   $('#project_cover').on('change', function(){
-  var reader = new FileReader();
+    var reader = new FileReader();
 
     reader.onload = function (e) {
         // get loaded data and render thumbnail.

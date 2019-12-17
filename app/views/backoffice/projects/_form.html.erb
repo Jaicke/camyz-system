@@ -20,7 +20,7 @@
     </div>
 
     <div class="form-group col-md-2">
-      <%= image_tag "", id:'image' %>
+      <%= image_tag link_to_preview_project_cover(@project), id:'image' %>
     </div>
   </div>
 
@@ -45,9 +45,9 @@
     </div>
   </div>
 
-
   <div class="text-right">
     <%= link_to  "Voltar", backoffice_projects_path, class: "btn btn-dark" %>
     <%= f.submit 'Salvar', class: "btn btn-primary" %>
   </div>
 <% end %>
+<br>
