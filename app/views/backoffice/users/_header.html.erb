@@ -1,15 +1,14 @@
-<% add_path = add_path # Refatorar essa partial para tratamento de usuário não admin  %>
-<h5>
+<% index = true if params[:action] == 'index' %>
+<h5 class="header">
   <%= fa_icon 'users'%> Usuários
-  <% if add_path.present? %>
-    <%= link_to add_path, class: 'icon-link' do %>
-      <%= fa_icon "plus-circle" %>
-    <% end %>
-  <% else %>
-    <%= "- #{action}" %>  
-  <% end %>  
+
+  <%= link_to add_path, class: 'icon-link' do %>
+    <%= fa_icon "plus-circle" %>
+  <% end if index %>
+
+  <%= "- #{action}" unless index %>
 </h5>
 
-<% unless add_path.present? %>
+<% unless index %>
   <hr>
 <% end %>

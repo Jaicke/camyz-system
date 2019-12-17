@@ -11,8 +11,8 @@
       </tr>
     </thead>
     <tbody>
-      <% @projects.each do |project| %>
-        <tr class="accordion" id="accordionExample">
+      <% if @projects.each do |project| %>
+        <tr>
           <td><%= project.order %></td>
           <td><%= project.name %></td>
           <td><%= boolean_label(project.active?) %></td>
@@ -31,7 +31,11 @@
             <% end %>
           </td>
         </tr>       
-      <% end %>  
+      <% end.empty? %>
+        <tr>
+          <td colspan='4'>Nenhum projeto cadastrado.</td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
