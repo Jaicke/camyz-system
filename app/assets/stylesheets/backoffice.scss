@@ -27,6 +27,10 @@ $modal-fade-transform: scale(.8);
   background-color: #3e3641 !important;
 }
 
+.form-control:focus {
+  border-color: rgba(194,8,109,1);
+}
+
 .alert-danger{
   background-color: #d64242;
   color: white;

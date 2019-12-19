@@ -11,8 +11,8 @@ class Backoffice::SessionsController < BackofficeController
       session[:user_id] = user.id
       redirect_to admin_path    
     else
-      flash.now.alert = "E-mail ou Senha incorretos."
-      render :new
+      flash.alert = "E-mail ou Senha incorretos."
+      redirect_to new_backoffice_session_path
     end
   end
 
