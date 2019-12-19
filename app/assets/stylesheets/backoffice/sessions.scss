@@ -2,10 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.session-container{
-  background-color: whitesmoke;
+.session-container{  
+  background: #c4bdbf;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.illustration-session{
+  width: 400px;
+}
+
+.login-form{
+  width: 400px;
+}
+
+.form-control:focus {
+  border-color: rgba(194,8,109,1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(194,8,109,1);
 }

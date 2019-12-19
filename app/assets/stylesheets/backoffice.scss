@@ -1,7 +1,12 @@
 @import "./backoffice/bootstrap/variables.scss";
 
-$active-color: #c3086e !default;
-$navbar-dark-hover-color: lighten($active-color, 30%) !default;
+$cami-primary: #c3096e;
+
+$primary: $cami-primary !default;
+
+
+$active-color: white !default;
+$navbar-dark-hover-color: lighten($active-color, 10%) !default;
 $navbar-dark-active-color: lighten($active-color, 10%) !default;
 
 $modal-fade-transform: scale(.8);
@@ -19,10 +24,13 @@ $modal-fade-transform: scale(.8);
 @import './icons';
 
 .navbar{
-  // background-color: #65b7a8 !important;
+  background-color: #3e3641 !important;
 }
 
-
+.alert-danger{
+  background-color: #d64242;
+  color: white;
+}
 
 .table-actions{
   min-width: 6em;
